@@ -8,10 +8,9 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 public class Map extends Mapper<LongWritable, Text, Text,Text> {
 	protected void map(LongWritable key, Text value,  Context context) throws InterruptedException, IOException{
-		
 		Text sonda= new Text();
 		Text dateT = new Text();
-		String pr = new String(),dt = new String();
+		String pr = new String(),dt = new String();i
 		String[] line = value.toString().split(",");
 		pr = line[3];
 		dt = line[1];
